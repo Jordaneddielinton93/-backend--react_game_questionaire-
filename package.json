@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "env": "^0.0.2",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node bin/www.js",
+    "dev": "nodemon bin/www.js",
+    "createUsersTable": "node -r dotenv/config db/scripts/create_score_and_user.js",
+    "populateUsersTable": "node -r dotenv/config db/scripts/populate_Score_and_user.js",
+    "dropUsersTable": "node -r dotenv/config db/scripts/drop_Score_and_user.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
