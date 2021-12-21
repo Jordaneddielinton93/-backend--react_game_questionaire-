@@ -14,8 +14,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node bin/www.js",
-    "dev": "nodemon bin/www.js",
+    "start": "node -r dotenv/config bin/www.js",
+    "dev": "nodemon -r dotenv/config bin/www.js",
     "createUsersTable": "node -r dotenv/config db/scripts/create_score_and_user.js",
     "populateUsersTable": "node -r dotenv/config db/scripts/populate_Score_and_user.js",
     "dropUsersTable": "node -r dotenv/config db/scripts/drop_Score_and_user.js",
